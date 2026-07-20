@@ -4,8 +4,6 @@ import numpy as np
 import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
-import dotenv
-import os
 from joblib import load
 from numpy.typing import ArrayLike
 
@@ -43,9 +41,7 @@ def _get_options_from_columns(columns: list, feature_name: str) -> list:
 
 
 def create_streamlit_app():
-    dotenv.load_dotenv()
-
-    model_path = os.getenv("MODEL_PATH")
+    model_path = "models/model_2026-07-17_19-05-53.joblib"
 
     st.title("Salary Prediction Model")
     st.write("Enter your details below to predict the estimated salary.")

@@ -6,5 +6,4 @@ pandas
 matplotlib
 kagglehub[pandas-datasets]
 seaborn
-dotenv
 datetime
